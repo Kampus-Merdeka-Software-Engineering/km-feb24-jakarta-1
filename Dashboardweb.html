@@ -1,0 +1,157 @@
+<span style = "font-family: Verdana, Geneva, Tahoma, sans-serif;">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard Website</title>
+        <link rel="stylesheet" href="DashboardWebsite.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    </head>
+    <body>
+        <div class = "gird-container">
+            <header class = "header">
+                <div class = = "logo">
+                    Vending Machine Dashboard
+                    <img class="header-logo" src="https://png.pngtree.com/png-clipart/20230825/original/pngtree-vending-machine-with-beverages-and-snack-picture-image_8695659.png"
+                    width = "100px" height = "100px">
+                </div>
+                <div class="menu-icon" onclick="openSidebar()">
+                    <span class="material-icons-outlined">menu</span>
+                  </div>
+                  <div class="header-left">
+                    <span class="material-icons-outlined">search</span>
+                  </div>
+                  <div class="header-right">
+                    <span class="material-icons-outlined">notifications</span>
+                    <span class="material-icons-outlined">email</span>
+                    <span class="material-icons-outlined">account_circle</span>
+                    <button class = "location-container"> Location </button>
+                    <button class = "category-container">Category </button>
+                  </div>
+            </header>
+        </div>
+        <main class="main-container">
+            <div class="main-title">
+              <h2>DASHBOARD</h2>
+            </div>
+
+            <div class = "main-cards">
+                <div class = "card">
+                    <div class = "scorecard">
+                        Scorecard
+                    </div>
+                    <div class = "Transaction">
+                        Transcation
+                        <h1 class = "9614">
+                            9614
+                        </h1>
+                    </div>
+                    
+
+                    <div class = "Product">
+                       Product
+                       <h1 class = "184">
+                        184
+                    </h1>
+                    </div>
+                    
+
+                    <div class = "Revenue">
+                        Revenue
+                        <h1 class = "$19,094">
+                            $19,094
+                        </h1>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="table">
+<table>
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th> Total Transaction</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <tr>
+                 <td  class = "dark-gray">1</td>
+            <td  class = "dark-gray">Coca-Cola Zero Sugar</td>
+           <td  class = "dark-gray">648</td>
+            </tr>
+            <tr>
+                <td class = "gray">2</td>
+                <td class = "gray">Monster Energy Original</td>
+                <td class = "gray">516</td>
+            </tr>
+            
+            <tr>
+                <td  class = "dark-gray">3</td>
+                <td  class = "dark-gray">Poland Springs Water</td>
+                <td  class = "dark-gray">443</td>
+            </tr>
+            
+
+            <tr>
+                <td class = "gray">4</td>
+                <td class = "gray">Coca-Cola Regular</td>
+                <td class = "gray">350</td>
+            </tr>
+            
+            <tr>
+                <td  class = "dark-gray">5</td>
+                <td  class = "dark-gray">Sunkist Soda</td>
+                <td  class = "dark-gray">290</td>
+            </tr>
+           
+            <tr>
+                <td class = "gray">6</td>
+                <td class = "gray">KitKat - Crisp Wafer</td>
+                <td class = "gray">272</td>
+            </tr>
+           
+            <tr>
+                <td  class = "dark-gray">7</td>
+                <td  class = "dark-gray">Red Bull Original</td>
+                <td  class = "dark-gray">238</td>
+            </tr>
+            
+
+            <tr>
+                <td  class = "gray">8</td>
+                <td class = "gray">SunChips Multigrain - Harvest Cheddar</td>
+                <td class = "gray">233</td>
+            </tr>
+           
+            <tr>
+                <td  class = "dark-gray">9</td>
+                <td  class = "dark-gray">Cheezit - Original</td>
+                <td  class = "dark-gray">205</td>
+            </tr>
+        <tr>
+            <td class = "gray">10</td>
+            <td class = "gray">SunChips Multigrain - Salsa</td>
+            <td class = "gray">198</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <div class = "first">1-10/184</div>
+        <button class = "left"> < </button>
+        <button class = "right"> > </button>
+    </tfoot>
+</table>
+<div class = "piechart">
+</div>
+            </div>
+            </main>
+    </body>
+    <script type = "text/javascript" src = "DatasetClean_VendingMachine_Team1JKT.json"></script>
+    <script type = "text/javascript" src = "Datasetjson.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+    </html>
+</span>

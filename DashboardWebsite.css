@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    background-color: #650918;
+}
+
+.logo{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scorecard{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color : white;
+    padding : 20px;
+    margin : 10px;
+    border-radius: 15px;
+}
+
+.Transaction{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #fe001a;
+    color : white;
+    padding : 25px;
+    margin : 15px;
+    border-radius: 20px;
+}
+
+.Product{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #fe001a;
+    color : white;
+    padding : 40px;
+    margin : 30px;
+    border-radius: 20px;
+}
+
+.Revenue{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #fe001a;
+    color : white;
+    padding : 25px;
+    margin : 15px;
+    border-radius: 20px;
+}
+
+.location-container{
+    display : flex;
+    padding: 10px;
+    margin : 10px;
+    background-color: white;
+    color : black;
+    justify-content: flex-end;
+    gap : 5px;
+}
+
+.category-container{
+    display : flex;
+    padding: 10px;
+    margin : 10px;
+    background-color: white;
+    color : black;
+    justify-content: flex-end;
+}
+
+h1{
+    background-color: #fe001a;
+}
+
+.left{
+    padding : 2px;
+    margin: 2px;
+    background-color: grey;
+    color : white;
+}
+
+.right{
+    padding : 2px;
+    margin: 2px;
+    background-color: grey;
+    color : white;
+}
+
+.piechart {
+
+    width: 200px;
+
+    height: 200px;
+
+    border-radius: 50%;
+
+    background: conic-gradient(
+
+        #830b1e 57%,
+
+        #f51a37 22%,
+
+        #fe5969 13%,
+        #f58482 8%
+
+    );
+
+}
+
+.table thead{
+background-color: #fe001a;
+color : white;
+}
+
+.dark-gray{
+    background-color: darkgray;
+}
+
+.gray {
+    background-color: gray;
+}

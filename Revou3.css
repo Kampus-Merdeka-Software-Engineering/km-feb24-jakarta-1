@@ -1,0 +1,35 @@
+* {
+    padding : 0 ;
+    margin : 0;
+}
+.html{
+    background-color : lightblue;
+    padding-top : 10px;
+    padding-bottom : 20px;
+}
+
+.Heading{
+   margin-bottom: 1rem;
+}
+
+table>tbody>tr>td {
+    padding : 20px;
+    background-color: aqua;
+}
+
+.box{
+    width : 200px;
+    height : 200px;
+    background-color: teal;
+    margin: 10px;
+}
+
+@media(max-width : 600px){
+    .box{
+        width : 100px;
+        height: 100px;
+    }
+    .content{
+        display : flex;
+    }
+}

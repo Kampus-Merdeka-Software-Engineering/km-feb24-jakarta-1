@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin : 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.global {
+  background-color: white;
+}
+
+.background{
+    background-color: beige;
+    margin : 30;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+.heading {
+    display: flex;
+    justify-content: center;
+}
+
+.heading-content {
+    text-align: center;
+    padding : 2rem;
+}
+
+.card-1 {
+    background-color: lightblue;
+    height: 150px;
+    width: 100px;
+    margin : 0 10 20 10;
+}
+
+.listing{
+    font-size : 10px;
+    margin : 20px;
+    text-align: center;
+}
+
