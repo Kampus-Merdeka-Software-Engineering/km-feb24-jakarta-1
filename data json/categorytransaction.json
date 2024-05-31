@@ -1,0 +1,821 @@
+[{
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "1",
+  "Kategori": "Water",
+  "Total_Transactions": "26"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "1",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "25"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "1",
+  "Kategori": "Food",
+  "Total_Transactions": "50"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "1",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "18"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "2",
+  "Kategori": "Water",
+  "Total_Transactions": "26"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "2",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "29"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "2",
+  "Kategori": "Food",
+  "Total_Transactions": "59"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "2",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "23"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "3",
+  "Kategori": "Water",
+  "Total_Transactions": "37"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "3",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "20"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "3",
+  "Kategori": "Food",
+  "Total_Transactions": "68"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "3",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "13"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "4",
+  "Kategori": "Water",
+  "Total_Transactions": "32"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "4",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "22"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "4",
+  "Kategori": "Food",
+  "Total_Transactions": "56"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "4",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "16"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "5",
+  "Kategori": "Water",
+  "Total_Transactions": "39"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "5",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "38"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "5",
+  "Kategori": "Food",
+  "Total_Transactions": "70"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "5",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "33"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "6",
+  "Kategori": "Water",
+  "Total_Transactions": "47"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "6",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "27"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "6",
+  "Kategori": "Food",
+  "Total_Transactions": "111"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "6",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "36"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "7",
+  "Kategori": "Water",
+  "Total_Transactions": "47"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "7",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "38"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "7",
+  "Kategori": "Food",
+  "Total_Transactions": "68"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "7",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "58"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "8",
+  "Kategori": "Water",
+  "Total_Transactions": "29"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "8",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "32"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "8",
+  "Kategori": "Food",
+  "Total_Transactions": "62"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "8",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "25"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "9",
+  "Kategori": "Water",
+  "Total_Transactions": "16"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "9",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "15"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "9",
+  "Kategori": "Food",
+  "Total_Transactions": "55"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "9",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "17"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "10",
+  "Kategori": "Water",
+  "Total_Transactions": "14"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "10",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "17"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "10",
+  "Kategori": "Food",
+  "Total_Transactions": "69"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "10",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "24"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "11",
+  "Kategori": "Water",
+  "Total_Transactions": "13"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "11",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "16"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "11",
+  "Kategori": "Food",
+  "Total_Transactions": "62"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "11",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "19"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "12",
+  "Kategori": "Water",
+  "Total_Transactions": "26"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "12",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "25"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "12",
+  "Kategori": "Food",
+  "Total_Transactions": "61"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "TransMonth": "12",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "10"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "3",
+  "Kategori": "Water",
+  "Total_Transactions": "8"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "3",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "31"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "3",
+  "Kategori": "Food",
+  "Total_Transactions": "79"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "3",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "13"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "4",
+  "Kategori": "Water",
+  "Total_Transactions": "47"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "4",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "59"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "4",
+  "Kategori": "Food",
+  "Total_Transactions": "195"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "4",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "20"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "5",
+  "Kategori": "Water",
+  "Total_Transactions": "40"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "5",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "54"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "5",
+  "Kategori": "Food",
+  "Total_Transactions": "221"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "5",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "28"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "6",
+  "Kategori": "Water",
+  "Total_Transactions": "38"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "6",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "74"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "6",
+  "Kategori": "Food",
+  "Total_Transactions": "260"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "6",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "36"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "7",
+  "Kategori": "Water",
+  "Total_Transactions": "43"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "7",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "62"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "7",
+  "Kategori": "Food",
+  "Total_Transactions": "233"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "7",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "51"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "8",
+  "Kategori": "Water",
+  "Total_Transactions": "23"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "8",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "85"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "8",
+  "Kategori": "Food",
+  "Total_Transactions": "210"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "8",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "27"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "9",
+  "Kategori": "Water",
+  "Total_Transactions": "12"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "9",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "65"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "9",
+  "Kategori": "Food",
+  "Total_Transactions": "217"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "9",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "31"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "10",
+  "Kategori": "Water",
+  "Total_Transactions": "28"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "10",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "62"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "10",
+  "Kategori": "Food",
+  "Total_Transactions": "228"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "10",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "29"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "11",
+  "Kategori": "Water",
+  "Total_Transactions": "27"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "11",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "49"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "11",
+  "Kategori": "Food",
+  "Total_Transactions": "189"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "11",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "19"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "12",
+  "Kategori": "Water",
+  "Total_Transactions": "34"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "12",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "43"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "12",
+  "Kategori": "Food",
+  "Total_Transactions": "179"
+}, {
+  "Lokasi": "EB Public Library",
+  "TransMonth": "12",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "31"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "1",
+  "Kategori": "Water",
+  "Total_Transactions": "1"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "1",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "13"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "1",
+  "Kategori": "Food",
+  "Total_Transactions": "78"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "1",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "2"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "2",
+  "Kategori": "Water",
+  "Total_Transactions": "4"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "2",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "11"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "2",
+  "Kategori": "Food",
+  "Total_Transactions": "86"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "2",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "3"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "3",
+  "Kategori": "Water",
+  "Total_Transactions": "2"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "3",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "6"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "3",
+  "Kategori": "Food",
+  "Total_Transactions": "80"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "4",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "2"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "4",
+  "Kategori": "Food",
+  "Total_Transactions": "65"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "5",
+  "Kategori": "Water",
+  "Total_Transactions": "1"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "5",
+  "Kategori": "Food",
+  "Total_Transactions": "59"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "5",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "1"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "6",
+  "Kategori": "Food",
+  "Total_Transactions": "69"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "6",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "1"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "7",
+  "Kategori": "Water",
+  "Total_Transactions": "1"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "7",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "1"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "7",
+  "Kategori": "Food",
+  "Total_Transactions": "64"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "7",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "4"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "8",
+  "Kategori": "Water",
+  "Total_Transactions": "3"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "8",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "3"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "8",
+  "Kategori": "Food",
+  "Total_Transactions": "117"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "8",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "3"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "9",
+  "Kategori": "Water",
+  "Total_Transactions": "2"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "9",
+  "Kategori": "Food",
+  "Total_Transactions": "104"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "9",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "3"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "10",
+  "Kategori": "Water",
+  "Total_Transactions": "1"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "10",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "1"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "10",
+  "Kategori": "Food",
+  "Total_Transactions": "80"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "10",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "1"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "11",
+  "Kategori": "Water",
+  "Total_Transactions": "2"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "11",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "5"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "11",
+  "Kategori": "Food",
+  "Total_Transactions": "87"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "11",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "5"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "12",
+  "Kategori": "Water",
+  "Total_Transactions": "6"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "12",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "8"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "12",
+  "Kategori": "Food",
+  "Total_Transactions": "45"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "TransMonth": "12",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "4"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "1",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "20"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "1",
+  "Kategori": "Food",
+  "Total_Transactions": "139"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "1",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "110"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "2",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "21"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "2",
+  "Kategori": "Food",
+  "Total_Transactions": "114"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "2",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "116"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "3",
+  "Kategori": "Food",
+  "Total_Transactions": "160"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "3",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "116"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "4",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "26"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "4",
+  "Kategori": "Food",
+  "Total_Transactions": "139"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "4",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "187"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "5",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "30"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "5",
+  "Kategori": "Food",
+  "Total_Transactions": "145"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "5",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "95"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "6",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "31"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "6",
+  "Kategori": "Food",
+  "Total_Transactions": "144"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "6",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "125"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "7",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "56"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "7",
+  "Kategori": "Food",
+  "Total_Transactions": "209"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "7",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "186"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "8",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "45"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "8",
+  "Kategori": "Food",
+  "Total_Transactions": "199"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "8",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "158"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "9",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "36"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "9",
+  "Kategori": "Food",
+  "Total_Transactions": "162"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "9",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "104"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "10",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "26"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "10",
+  "Kategori": "Food",
+  "Total_Transactions": "123"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "10",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "116"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "11",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "30"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "11",
+  "Kategori": "Food",
+  "Total_Transactions": "115"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "11",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "156"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "12",
+  "Kategori": "Non Carbonated",
+  "Total_Transactions": "33"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "12",
+  "Kategori": "Food",
+  "Total_Transactions": "135"
+}, {
+  "Lokasi": "GuttenPlans",
+  "TransMonth": "12",
+  "Kategori": "Carbonated",
+  "Total_Transactions": "54"
+}]

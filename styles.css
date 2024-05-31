@@ -1,0 +1,214 @@
+body {
+    background-color: #EEF7FF;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #CDE8E5;
+    padding: 1.25rem; 
+}
+
+.header-title {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.5rem; 
+    margin: 0; 
+    text-align: left; 
+}
+
+/* GET TO KNOW */
+main {
+    padding: 1.25rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 62.5rem; 
+    height: 37.5rem; 
+    background-color: #CDE8E5;
+    padding: 1.25rem; 
+    border-radius: 0.625rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container {
+    flex: 1;
+    padding: 0 1.25rem; 
+    text-align: left;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 0.625rem; 
+    font-size: 1.25rem;
+    line-height: 1.5; 
+}
+
+.card p {
+    font-size: 1rem; 
+    line-height: 1.5;
+}
+
+/* HR */
+.hr {
+    border: 0.0625rem solid rgb(149, 149, 149); 
+    margin-top: 0.625rem;
+    width: 95%;
+}
+
+/* SECTION */
+.section-text {
+    font-size: 1.5rem; 
+    text-align: left; 
+    margin: 0.5rem 0; 
+    font-weight: bold; 
+    color: #333; 
+    width: 100%; 
+    padding-left: 5rem;
+}
+
+.body-chart {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    margin: 0;
+}
+
+.filter-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 5rem;
+    margin-bottom: 1rem;
+}
+
+.filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+    padding-left: 1rem;
+}
+
+.dropdown {
+    padding: 0.25rem; 
+    font-size: 0.9rem; 
+    border-radius: 0.25rem; 
+    width: auto; 
+}
+
+.container-chart {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 1.25rem 0; 
+}
+
+.chart-container {
+    flex: 1;
+    margin: 1.25rem; 
+    text-align: center; 
+}
+
+.chart-container canvas {
+    max-width: 35rem;  
+    max-height: 18rem;  
+    width: 100%; 
+    height: auto; 
+    margin: 0 auto; 
+}
+
+.chart-title {
+    font-size: 1.25rem;  
+    text-align: center;  
+    margin-bottom: 1rem;  
+    color: #333;  
+}
+
+canvas {
+    background-color: #fff;
+    border: 0.0625rem solid #ccc; 
+    border-radius: 1rem; 
+    width: 100%;
+    height: 15.625rem; 
+}
+
+/* DATA TABLES */
+.chart-table-container {
+    flex: 1;
+    margin: 1.25rem; 
+    text-align: center; 
+}
+
+.chart-table-container canvas {
+    max-width: 35rem;  
+    max-height: 18rem;  
+    width: 100%; 
+    height: auto; 
+    margin: 0 auto; 
+}
+
+.chart-container .chart-title {
+    font-size: 1.25rem;  
+    text-align: center;  
+    margin-bottom: 1rem;  
+    color: #333;  
+}
+
+.container-table {
+    width: 100%; 
+    padding: 1rem;  
+}
+
+table.display {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem; 
+}
+
+table.display th,
+table.display td {
+    padding: 0.5rem; 
+    text-align: left;
+    border-bottom: 0.0625rem solid #fff;
+}
+
+table.display th {
+    background-color: #fff;
+    font-weight: bold;
+}
+
+table.display tr:nth-child(even) {
+    background-color: #fff;
+}
+
+.dataTables_info,
+.dataTables_paginate {
+    font-size: 0.7rem; 
+}
+
+.dataTables_length,
+.dataTables_filter label {
+    font-size: 0.7rem; 
+}
+
+.dataTables_length select,
+.dataTables_filter input[type="search"] {
+    font-size: 0.7rem; 
+    padding: 0.25rem; 
+}

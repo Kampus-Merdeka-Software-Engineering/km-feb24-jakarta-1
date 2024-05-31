@@ -1,0 +1,61 @@
+[{
+  "Lokasi": "EB Public Library",
+  "Kategori": "Food",
+  "total": "76"
+}, {
+  "Lokasi": "GuttenPlans",
+  "Kategori": "Food",
+  "total": "64"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "Kategori": "Food",
+  "total": "62"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "Kategori": "Food",
+  "total": "55"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "Kategori": "Non Carbonated",
+  "total": "25"
+}, {
+  "Lokasi": "EB Public Library",
+  "Kategori": "Non Carbonated",
+  "total": "21"
+}, {
+  "Lokasi": "GuttenPlans",
+  "Kategori": "Non Carbonated",
+  "total": "9"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "Kategori": "Carbonated",
+  "total": "7"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "Kategori": "Non Carbonated",
+  "total": "7"
+}, {
+  "Lokasi": "Brunswick Sq Mall",
+  "Kategori": "Water",
+  "total": "6"
+}, {
+  "Lokasi": "GuttenPlans",
+  "Kategori": "Carbonated",
+  "total": "5"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "Kategori": "Water",
+  "total": "3"
+}, {
+  "Lokasi": "EB Public Library",
+  "Kategori": "Water",
+  "total": "3"
+}, {
+  "Lokasi": "Earle Asphalt",
+  "Kategori": "Carbonated",
+  "total": "2"
+}, {
+  "Lokasi": "EB Public Library",
+  "Kategori": "Carbonated",
+  "total": "2"
+}]

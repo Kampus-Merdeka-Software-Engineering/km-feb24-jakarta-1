@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VENDING MACHINE DASHBOARD</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="chart js/revenuemonth.js"></script>
+    <script src="chart js/revenuelocation.js"></script>
+    <script src="chart js/categoryproduct.js" defer></script>
+    <script src="chart js/categorytransaction.js" defer></script>
+    <script src="chart js/productseason.js" defer></script>
+    <script src="chart js/datatables.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">VENDING MACHINE DASHBOARD</h1>
+    </header>    
+    
+    <main>
+        <div class="card">
+            <div class="image-container">
+                <img src="machine.png" alt="Vending Machine" style="width: 270px; height: 382px;">
+                <img src="peta.png" alt="Peta Lokasi" style="width: 118px; height: 180px;">
+            </div>
+            <div class="text-container">
+                <h2>Get to Know</h2>
+                <p>Visualisasi data pada website ini merupakan representasi dari dataset vending machine yang tersebar pada 4 lokasi berbeda yang berada di kota New Jersey, Amerika Serikat.</p>
+                <p>Diharapkan dengan data visualisasi ini perusahaan dapat memiliki insight terkait dengan data penjualan produk pada vending machine. Sehingga perusahaan dapat menaikkan pendapatan pada penjualan produk vending machine kedepan.</p>
+            </div>
+        </div>
+    </main>
+
+    <hr class="hr">
+    <div class="body-chart">
+        <p class="section-text">OVERVIEW</p>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <hr class="hr">
+    <div class="body-chart">
+        <div class="filter-section">
+            <p class="section-text">REVENUE</p>
+        </div>
+        <div class="container-chart">
+            <div class="chart-container">
+                <h3 class="chart-title">Revenue per Month</h3>
+                <div class="filters">
+                    <select class="dropdown" id="location-filter">
+                        <option value="">Location</option>
+                        <option value="GuttenPlans">Gutten Plans</option>
+                        <option value="EB Public Library">EB Public Library</option>
+                        <option value="Brunswick Sq Mall">Brunswick Sq Mall</option>
+                        <option value="Earle Asphalt">Earle Asphalt</option>
+                    </select>
+                </div>
+                <canvas id="lineChart"></canvas>
+            </div>   
+            <div class="chart-container">
+                <h3 class="chart-title">Total Revenue of Location</h3>
+                <div class="filters">
+                    <select class="dropdown" id="month-filter">
+                        <option value="">Month</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                </div>
+                <canvas id="barChart"></canvas>
+            </div>
+        </div>
+
+    <hr class="hr">
+        <div class="filter-section">
+            <p class="section-text">CATEGORY</p>
+        </div>
+        <div class="container-chart">
+            <div class="chart-container">
+                <h3 class="chart-title">Total Products by Category and Location</h3>
+                <div class="filters">
+                    <select class="dropdown" id="month-filter-category">
+                        <option value="">Month</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                </div>
+                <canvas id="stackedBar"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3 class="chart-title">Total Transaction by Product Category</h3>
+                <div class="filters">
+                    <select class="dropdown" id="month-filter-category2">
+                        <option value="">Month</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                    <select class="dropdown" id="location-filter-category2">
+                        <option value="">Location</option>
+                        <option value="GuttenPlans">Gutten Plans</option>
+                        <option value="EB Public Library">EB Public Library</option>
+                        <option value="Brunswick Sq Mall">Brunswick Sq Mall</option>
+                        <option value="Earle Asphalt">Earle Asphalt</option>
+                    </select>
+                </div>
+                <canvas id="pieChart"></canvas>
+            </div>   
+        </div>
+
+    <hr class="hr">
+    <div class="filter-section">
+        <p class="section-text">PRODUCT</p>
+    </div>
+    <div class="container-chart">
+        <div class="chart-table-container">
+            <h3 class="chart-title">Top 10 Product</h3>
+            <div class="filters">
+                <select class="dropdown" id="month-filter-product">
+                    <option value="">Month</option>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+            </div>
+            <table id="top" class="display">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="chart-table-container">
+            <h3 class="chart-title">Produk per season</h3>
+            <div class="filters">
+                <select class="dropdown" id="location-filter-product">
+                    <option value="">Location</option>
+                    <option value="GuttenPlans">Gutten Plans</option>
+                    <option value="EB Public Library">EB Public Library</option>
+                    <option value="Brunswick Sq Mall">Brunswick Sq Mall</option>
+                    <option value="Earle Asphalt">Earle Asphalt</option>
+                </select>
+            </div>
+            <canvas id="100stackedChart"></canvas>
+        </div>
+    </div>
+
+</body>
+</html>
