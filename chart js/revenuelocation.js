@@ -1,4 +1,3 @@
-// Function to calculate revenue per location for a specific month
 function calculateRevenuePerLocation(data, month = null) {
     const revenuePerLocation = {};
 
@@ -19,7 +18,6 @@ function calculateRevenuePerLocation(data, month = null) {
     return revenuePerLocation;
 }
 
-// Function to update the chart
 function updateChart(chart, labels, revenue, colors) {
     chart.data.labels = labels;
     chart.data.datasets[0].data = revenue;
@@ -28,16 +26,13 @@ function updateChart(chart, labels, revenue, colors) {
     chart.update();
 }
 
-// Load JSON data and initialize event listeners
 fetch('data json/revenue_per_location.json')
     .then(response => response.json())
     .then(data => {
-        // Initial revenue calculation for all months
         const initialRevenuePerLocation = calculateRevenuePerLocation(data);
         const initialLabels = Object.keys(initialRevenuePerLocation).sort((a, b) => initialRevenuePerLocation[b] - initialRevenuePerLocation[a]);
         const initialRevenue = initialLabels.map(location => initialRevenuePerLocation[location]);
 
-        // Define the colors for each location
         const locationColors = {
             'GuttenPlans': '#116A7B',
             'EB Public Library': '#CDC2AE',
@@ -46,8 +41,6 @@ fetch('data json/revenue_per_location.json')
         };
 
         const initialColors = initialLabels.map(location => locationColors[location] || '#000000');
-
-        // Create the chart
         const ctx = document.getElementById('barChart').getContext('2d');
         const chart = new Chart(ctx, {
             type: 'bar',
@@ -62,11 +55,17 @@ fetch('data json/revenue_per_location.json')
                 }]
             },
             options: {
+                responsive: true,
+                maintainAspectRatio: false,
                 scales: {
                     x: {
                         title: {
                             display: true,
                             text: 'Location'
+                        },
+                        ticks: {
+                            autoSkip: true,
+                            maxTicksLimit: 5
                         }
                     },
                     y: {
@@ -89,6 +88,9 @@ fetch('data json/revenue_per_location.json')
                     legend: {
                         display: true,
                         labels: {
+                            font: {
+                                size: 10 
+                            },
                             generateLabels: function(chart) {
                                 const labels = chart.data.labels;
                                 return labels.map(label => ({
@@ -107,7 +109,6 @@ fetch('data json/revenue_per_location.json')
             plugins: [ChartDataLabels]
         });
 
-        // Event listener for month filter
         document.getElementById('month-filter').addEventListener('change', function() {
             const selectedMonth = parseInt(this.value);
             const filteredRevenuePerLocation = calculateRevenuePerLocation(data, selectedMonth);

@@ -1,4 +1,3 @@
-// Function to convert month number to month name
 function getMonthName(monthNumber) {
     const months = [
         "January", "February", "March", "April", "May", "June",
@@ -9,7 +8,6 @@ function getMonthName(monthNumber) {
 
 let chart;
 
-// Function to create or update chart
 function createOrUpdateChart(labels, revenue) {
     const revenueColor = '#116A7B';
     const ctx = document.getElementById('lineChart').getContext('2d');
@@ -27,12 +25,14 @@ function createOrUpdateChart(labels, revenue) {
                     label: 'Revenue',
                     data: revenue,
                     borderColor: revenueColor,
-                    backgroundColor: 'rgba(255, 255, 255, 0)', // Set background color to transparent
+                    backgroundColor: 'rgba(255, 255, 255, 0)', 
                     borderWidth: 2,
-                    fill: false // Set fill to false to remove area fill
+                    fill: false 
                 }]
             },
             options: {
+                responsive: true, 
+                maintainAspectRatio: false, 
                 scales: {
                     x: {
                         title: {
@@ -51,7 +51,7 @@ function createOrUpdateChart(labels, revenue) {
                 plugins: {
                     legend: {
                         labels: {
-                            color: revenueColor // Set legend label color to revenue color
+                            color: revenueColor 
                         }
                     },
                     datalabels: {
@@ -72,7 +72,6 @@ function createOrUpdateChart(labels, revenue) {
     }
 }
 
-// Function to calculate revenue per month
 function calculateRevenuePerMonth(data) {
     const revenuePerMonth = {};
 
@@ -93,15 +92,14 @@ function calculateRevenuePerMonth(data) {
     return { labels, revenue };
 }
 
-// Load JSON data and initialize event listener
+
 fetch('data json/revenue_per_month.json')
     .then(response => response.json())
     .then(data => {
-        // Calculate total revenue per month for all locations
+        
         const { labels, revenue } = calculateRevenuePerMonth(data);
         createOrUpdateChart(labels, revenue);
 
-        // Event listener for location filter
         document.getElementById('location-filter').addEventListener('change', function() {
             const selectedLocation = this.value;
             if (selectedLocation) {
@@ -109,13 +107,11 @@ fetch('data json/revenue_per_month.json')
                 const { labels, revenue } = calculateRevenuePerMonth(filteredData);
                 createOrUpdateChart(labels, revenue);
             } else {
-                // If no location is selected, show total revenue for all locations
                 const { labels, revenue } = calculateRevenuePerMonth(data);
                 createOrUpdateChart(labels, revenue);
             }
         });
 
-        // Trigger initial load with total revenue for all locations
         document.getElementById('location-filter').dispatchEvent(new Event('change'));
     })
     .catch(error => console.error('Error loading the JSON data:', error));

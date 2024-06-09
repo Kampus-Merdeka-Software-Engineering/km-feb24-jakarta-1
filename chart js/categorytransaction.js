@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const ctxPie = document.getElementById('pieChart').getContext('2d');
     let pieChart;
 
-    // Function to update the Pie Chart
     function updatePieChart(data) {
         const categories = [...new Set(data.map(item => item.Kategori))];
         const transactionData = categories.map(category => {
@@ -35,9 +34,15 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             options: {
                 responsive: true,
+                maintainAspectRatio: false,
                 plugins: {
                     legend: {
-                        position: 'top'
+                        position: 'top',
+                        labels: {
+                            font: {
+                                size: 10 
+                            }
+                        }
                     },
                     datalabels: {
                         formatter: (value, ctx) => {
@@ -59,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             return ctx.dataset.backgroundColor;
                         },
                         font: {
-                            size: 9
+                            size: 9 
                         }
                     }
                 }
@@ -68,7 +73,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Fetch data and update the chart based on selected month and location
     function fetchDataAndUpdateChart(month, location) {
         fetch('data json/categorytransaction.json')
             .then(response => response.json())
@@ -81,10 +85,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     filteredData = filteredData.filter(item => item.Lokasi === location);
                 }
                 updatePieChart(filteredData);
-            });
+            })
+            .catch(error => console.error('Error loading the JSON data:', error));
     }
 
-    // Event listeners for the dropdowns
     monthDropdown.addEventListener('change', function() {
         const selectedMonth = monthDropdown.value;
         const selectedLocation = locationDropdown.value;
@@ -97,6 +101,5 @@ document.addEventListener('DOMContentLoaded', function() {
         fetchDataAndUpdateChart(selectedMonth, selectedLocation);
     });
 
-    // Initial load: display data for all months and locations
     fetchDataAndUpdateChart();
 });

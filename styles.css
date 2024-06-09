@@ -1,22 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Poppins:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
 body {
     background-color: #EEF7FF;
-    font-family: 'Poppins', sans-serif;
     margin: 0 auto;
 }
 
-header {
+/* NAVBAR */
+li, a, button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 0.9375rem; 
+    color: black;
+    text-decoration: none;
     background-color: #CDE8E5;
-    padding: 1.25rem; 
 }
 
-.header-title {
-    font-family: 'Poppins', sans-serif; 
-    font-size: 1.5rem; 
-    margin: 0; 
-    text-align: left; 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 10%; 
+    background-color: #CDE8E5;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
 }
 
-/* GET TO KNOW */
+header.sticky {
+    background-color: #CDE8E5;
+    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1); 
+}
+
+.logo {
+    cursor: pointer;
+    background-color: #CDE8E5;
+    font-weight: bolder;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #CDE8E5;
+    margin-left: 3.125rem; 
+    transition: all 0.3s ease 0s;
+}
+
+.navbar {
+    background-color: #CDE8E5;
+    display: flex;
+}
+
+.links li {
+    display: inline-block;
+    padding: 0.625rem 1.25rem; 
+    background-color: #CDE8E5;
+}
+
+.links li a:hover,
+.links li a.active,
+.logo:hover {
+    color: #4D869C;
+}
+
+.toggle_btn {
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+    background-color: rgba(0, 136, 169, 1);
+    color: #fff;
+    padding: 0.438rem 1.25rem; 
+    border: solid rgba(0, 136, 169, 1);
+    border-radius: 1.25rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.action_btn:hover {
+    transform: scale(1.05);
+    color: rgba(0, 136, 169, 1);
+    background-color: #CDE8E5;
+}
+
+.action_btn:active {
+    transform: scale(0.95);
+}
+
+/* DROPDOWN MENU */
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 240px;
+}
+
+.dropdown_menu ul {
+    padding: 0;
+}
+
+.dropdown_menu li {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Get To Know Styling */
 main {
     padding: 1.25rem; 
     display: flex;
@@ -25,8 +145,8 @@ main {
 }
 
 .card {
-    width: 62.5rem; 
-    height: 37.5rem; 
+    width: 60rem; 
+    height: 28.125rem; 
     background-color: #CDE8E5;
     padding: 1.25rem; 
     border-radius: 0.625rem; 
@@ -46,36 +166,81 @@ main {
 .text-container {
     flex: 1;
     padding: 0 1.25rem; 
-    text-align: left;
+    text-align: justify;
 }
 
 h2 {
     margin-top: 0;
     margin-bottom: 0.625rem; 
-    font-size: 1.25rem;
+    font-size: 2rem;
     line-height: 1.5; 
 }
 
 .card p {
-    font-size: 1rem; 
-    line-height: 1.5;
+    font-size: 0.9rem; 
+    line-height: 1.8;
+    margin-bottom: 0.8rem; 
 }
 
-/* HR */
+
+/* HR Styling*/
 .hr {
     border: 0.0625rem solid rgb(149, 149, 149); 
-    margin-top: 0.625rem;
-    width: 95%;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    align-items:center;
 }
 
-/* SECTION */
+/* Overview Styling */
+#overview {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 1.25rem auto; 
+    justify-content: center;
+    align-items: center;
+}
+
+.overview-main1,
+.overview-main2,
+.overview-main3,
+.overview-main4 {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 1.25rem 1.875rem; 
+    box-sizing: border-box;
+    align-items: center;
+    margin-top: 3.125rem; 
+}
+
+.locationnumber,
+.totalofproducts,
+.mostpopularproducts,
+.mostpopularcategory,
+.revenue,
+.daterange,
+.highestmonthrevenue,
+.favoredpayment,
+.peakseasonrevenue {
+    font-weight: bold;
+    margin-bottom: 0.3125rem; 
+}
+
+img {
+    width: 14rem;
+    height: 7.3rem;
+    object-fit: fill;
+}
+
+/* Section Styling */
 .section-text {
-    font-size: 1.5rem; 
-    text-align: left; 
-    margin: 0.5rem 0; 
-    font-weight: bold; 
-    color: #333; 
-    width: 100%; 
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0.5rem 0;
+    font-weight: bold;
+    color: #333;
+    width: 100%;
     padding-left: 5rem;
 }
 
@@ -84,7 +249,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     margin: 0;
 }
 
@@ -100,90 +265,97 @@ h2 {
 .filters {
     display: flex;
     gap: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.2rem;
     margin-top: 2rem;
     padding-left: 1rem;
 }
 
-.dropdown {
-    padding: 0.25rem; 
-    font-size: 0.9rem; 
-    border-radius: 0.25rem; 
-    width: auto; 
+.filters .dropdown {
+    padding: 0.25rem;
+    font-size: 0.9rem;
+    border-radius: 0.25rem;
+    width: auto;
 }
 
 .container-chart {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    margin: 1.25rem 0; 
+    margin: 1.25rem 0;
 }
 
 .chart-container {
     flex: 1;
-    margin: 1.25rem; 
-    text-align: center; 
+    margin: 1.25rem;
+    text-align: center;
 }
 
 .chart-container canvas {
-    max-width: 35rem;  
-    max-height: 18rem;  
-    width: 100%; 
-    height: auto; 
-    margin: 0 auto; 
+    max-width: 35rem;
+    max-height: 20rem;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 1rem;  
 }
 
 .chart-title {
-    font-size: 1.25rem;  
-    text-align: center;  
-    margin-bottom: 1rem;  
-    color: #333;  
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
 }
 
 canvas {
     background-color: #fff;
-    border: 0.0625rem solid #ccc; 
-    border-radius: 1rem; 
+    border: 0.0625rem solid #ccc;
+    border-radius: 1rem;
     width: 100%;
-    height: 15.625rem; 
+    height: 20rem;
 }
 
-/* DATA TABLES */
+/* DataTables styling */
 .chart-table-container {
     flex: 1;
-    margin: 1.25rem; 
-    text-align: center; 
+    margin: 1.25rem;
+    text-align: center;
 }
 
 .chart-table-container canvas {
-    max-width: 35rem;  
-    max-height: 18rem;  
-    width: 100%; 
-    height: auto; 
-    margin: 0 auto; 
+    max-width: 34.5rem;
+    max-height: 29rem;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 1rem;  
+}
+
+.chart-table-container canvas.extra-height {
+    height: 29rem; 
 }
 
 .chart-container .chart-title {
-    font-size: 1.25rem;  
-    text-align: center;  
-    margin-bottom: 1rem;  
-    color: #333;  
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
 }
 
 .container-table {
-    width: 100%; 
-    padding: 1rem;  
+    width: 100%;
+    padding: 1rem;
 }
 
 table.display {
     width: 100%;
     border-collapse: collapse;
-    font-size: 0.875rem; 
+    font-size: 0.875rem;
+    padding: 0.4rem;  
 }
 
 table.display th,
 table.display td {
-    padding: 0.5rem; 
+    padding: 0.5rem;
     text-align: left;
     border-bottom: 0.0625rem solid #fff;
 }
@@ -198,17 +370,393 @@ table.display tr:nth-child(even) {
 }
 
 .dataTables_info,
-.dataTables_paginate {
-    font-size: 0.7rem; 
-}
-
+.dataTables_paginate,
 .dataTables_length,
 .dataTables_filter label {
-    font-size: 0.7rem; 
+    font-size: 0.75rem; 
 }
 
-.dataTables_length select,
-.dataTables_filter input[type="search"] {
-    font-size: 0.7rem; 
-    padding: 0.25rem; 
+.dataTables_paginate .paginate_button {
+    padding: 0.2rem 0.5rem; 
+    font-size: 0.75rem; 
+    margin: 0 0.2rem; 
 }
+
+.dataTables_paginate .paginate_button:hover {
+    background-color: #ddd; 
+}
+
+/* Footer Styling */
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #CDE8E5;
+    height: auto;
+    width: auto;
+    font-family: "Poppins", sans-serif;
+    padding-top: 0.625rem; 
+    color: black;
+}
+
+.footer-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 25.625rem; 
+    margin: 0.625rem auto; 
+    line-height: 1.75rem; 
+    font-size: 0.875rem; 
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.25rem 0 1rem 0; 
+    scale: 1.8;
+}
+
+.footer-bottom {
+    background: #b1dad5;
+    width: auto;
+    padding: 0.9375rem 0; 
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 0.875rem; 
+    word-spacing: 0.125rem; 
+    text-transform: capitalize;
+}
+
+.footer-content .col-1, .footer-content .col-2 {
+    flex: 1;
+    padding: 0px;
+}
+
+.footer-content .col-1 {
+    max-width: 25%;
+}
+
+.footer-content .col-2 {
+    max-width: 100%;
+    margin-right: 10px;
+}
+
+.footer-content .col-3 {
+    max-width: 20%;
+    margin-right: 50px;
+}
+
+form input {
+    width: 200px;
+    height: 30px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    outline: none;
+    border: none;
+}
+
+form button {
+    background-color: rgba(0, 136, 169, 1);
+    color: #fff;
+    padding: 0.438rem 1.25rem; 
+    border: solid rgba(0, 136, 169, 1);
+    border-radius: 0.938rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+form button:hover {
+    transform: scale(1.05);
+    color: rgba(0, 136, 169, 1);
+    background-color: #CDE8E5;
+}
+
+form button:active {
+    transform: scale(0.95);
+}
+
+/* Desktop Style */
+@media(max-width: 1210px) {
+li, a, button {
+    font-size: 0.75rem; 
+}
+    
+.logo {
+    font-weight: 700;
+}
+    
+.links {
+    margin-left: 2rem; 
+}
+    
+.links li {
+    display: flex;
+}
+    
+.action_btn {
+    font-size: 0.75rem;
+}
+    
+}
+
+/* Tablet Styles */
+@media(max-width: 1100px) {
+    
+    .navbar .links,
+    .action_btn {
+        display: none;
+    }
+
+    .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+
+    .body-chart {
+        padding: 0 1rem;
+    }
+
+    .filter-section {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .section-text {
+        font-size: 1.8rem !important;
+        padding-left: 0;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .chart-title {
+        font-size: 1rem !important;
+        text-align: center;
+        margin-bottom: 0.5rem;
+        color: #333;
+    }
+
+    .container-chart {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chart-container,
+    .chart-table-container {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .chart-container canvas,
+    .chart-table-container canvas {
+        max-width: 100%;
+        height: 400px;
+        width: 100%;
+        padding: 1rem;  
+    }
+
+    .filters {
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .dropdown {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .hr {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    table.dataTable {
+        width: 100% !important;
+        margin: 1rem 0;
+    }
+
+    table.dataTable thead,
+    table.dataTable tbody {
+        font-size: 0.875rem;
+    }
+
+    #overview {
+        flex-direction:row;
+        align-items: center;
+    }
+
+    .overview-main1,
+    .overview-main2,
+    .overview-main3,
+    .overview-main4 {
+        width: 25%;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    .overview-main1 img,
+    .overview-main2 img,
+    .overview-main3 img,
+    .overview-main4 img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .text-container {
+        padding: 0.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .text-container p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    #overview {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .overview-main1,
+    .overview-main2,
+    .overview-main3,
+    .overview-main4 {
+        width: 50%;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    .overview-main1 img,
+    .overview-main2 img,
+    .overview-main3 img,
+    .overview-main4 img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .body-chart {
+        padding: 0 1rem;
+    }
+
+    .filter-section {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .section-text {
+        font-size: 2rem !important;
+        padding-left: 0;
+        text-align: left;
+    }
+
+    .chart-title {
+        font-size: 1rem !important;
+        text-align: center;
+        margin-bottom: 0.5rem;
+        color: #333;
+    }
+
+    .container-chart {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chart-container,
+    .chart-table-container {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .chart-container canvas,
+    .chart-table-container canvas {
+        max-width: 100%;
+        height: 400px;
+        width: 100%;
+        padding: 1rem;  
+    }
+
+    .filters {
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .dropdown {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .hr {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    table.dataTable {
+        width: 100% !important;
+        margin: 1rem 0;
+    }
+
+    table.dataTable thead,
+    table.dataTable tbody {
+        font-size: 0.875rem;
+    }
+}
+

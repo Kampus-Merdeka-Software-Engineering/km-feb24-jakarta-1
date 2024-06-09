@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch('data json/categoryproduct.json')
         .then(response => response.json())
         .then(data => {
-            // Calculate total for each location
             const locationTotals = {};
             data.forEach(item => {
                 const location = item.Lokasi;
@@ -14,13 +13,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
 
-            // Sort locations by total in descending order
             const sortedLocations = Object.keys(locationTotals).sort((a, b) => locationTotals[b] - locationTotals[a]);
 
-            // Get unique categories
             const categories = [...new Set(data.map(item => item.Kategori))];
 
-            // Define the colors for each category
             const categoryColors = {
                 'Food': '#116A7B',
                 'Non Carbonated': '#CDC2AE',
@@ -28,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Water': '#C2DEDC'
             };
 
-            // Prepare datasets
             const datasets = categories.map(category => {
                 return {
                     label: category,
@@ -36,11 +31,10 @@ document.addEventListener('DOMContentLoaded', function() {
                         const item = data.find(d => d.Lokasi === location && d.Kategori === category);
                         return item ? parseInt(item.total) : 0;
                     }),
-                    backgroundColor: categoryColors[category] || '#000000'  // Default to black if category is not found
+                    backgroundColor: categoryColors[category] || '#000000'  
                 };
             });
 
-            // Create the chart
             const ctx = document.getElementById('stackedBar').getContext('2d');
             new Chart(ctx, {
                 type: 'bar',
@@ -50,7 +44,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 options: {
                     responsive: true,
-                    indexAxis: 'y',  // This is the key option for horizontal bars
+                    maintainAspectRatio: false,
+                    indexAxis: 'y',  
                     plugins: {
                         tooltip: {
                             mode: 'index',
@@ -67,11 +62,11 @@ document.addEventListener('DOMContentLoaded', function() {
                             anchor: 'end',
                             align: 'start',
                             offset: 10,
-                            borderRadius: 0, // Remove border radius
-                            backgroundColor: null, // No background color
-                            padding: 0, // Remove padding
+                            borderRadius: 0, 
+                            backgroundColor: null, 
+                            padding: 0, 
                             font: {
-                                size: 10 // Smaller font size
+                                size: 10 
                             }
                         }
                     },
@@ -80,6 +75,8 @@ document.addEventListener('DOMContentLoaded', function() {
                             stacked: true,
                             beginAtZero: true,
                             ticks: {
+                                autoSkip: true,
+                                maxTicksLimit: 5,
                                 callback: function(value) {
                                     return value;
                                 }
@@ -90,11 +87,16 @@ document.addEventListener('DOMContentLoaded', function() {
                             }
                         },
                         y: {
-                            stacked: true
+                            stacked: true,
+                            ticks: {
+                                autoSkip: true,
+                                maxTicksLimit: 5
+                            }
                         }
                     }
                 },
                 plugins: [ChartDataLabels]
             });
-        });
+        })
+        .catch(error => console.error('Error loading the JSON data:', error));
 });

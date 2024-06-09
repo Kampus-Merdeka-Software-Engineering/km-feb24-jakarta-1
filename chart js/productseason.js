@@ -1,44 +1,60 @@
 document.addEventListener('DOMContentLoaded', function () {
+    const locationFilter = document.getElementById('location-filter-product');
+    let originalData;
+
     fetch('data json/productseason.json')
         .then(response => response.json())
         .then(data => {
-            const groupedData = data.reduce((acc, item) => {
-                const { Season, Category, Total_Transaction } = item;
-                if (!acc[Season]) acc[Season] = {};
-                if (!acc[Season][Category]) acc[Season][Category] = 0;
-                acc[Season][Category] += parseFloat(Total_Transaction);
-                return acc;
-            }, {});
+            originalData = data;
+            updateChart(data);
+        });
 
-            // Calculate total transactions for each season
-            const seasonTotals = {};
-            Object.keys(groupedData).forEach(season => {
-                seasonTotals[season] = Object.values(groupedData[season]).reduce((acc, transactions) => acc + transactions, 0);
-            });
+    locationFilter.addEventListener('change', function() {
+        const selectedLocation = locationFilter.value;
+        const filteredData = selectedLocation ? originalData.filter(item => item.Location === selectedLocation) : originalData;
+        updateChart(filteredData);
+    });
 
-            // Sort seasons by total transactions in descending order
-            const sortedSeasons = Object.keys(seasonTotals).sort((a, b) => seasonTotals[b] - seasonTotals[a]);
+    function updateChart(data) {
+        const groupedData = data.reduce((acc, item) => {
+            const { Season, Category, Total_Transaction } = item;
+            if (!acc[Season]) acc[Season] = {};
+            if (!acc[Season][Category]) acc[Season][Category] = 0;
+            acc[Season][Category] += parseFloat(Total_Transaction);
+            return acc;
+        }, {});
 
-            const categories = Array.from(new Set(data.map(item => item.Category)));
+        const seasonTotals = {};
+        Object.keys(groupedData).forEach(season => {
+            seasonTotals[season] = Object.values(groupedData[season]).reduce((acc, transactions) => acc + transactions, 0);
+        });
 
-            // Define the colors for each category
-            const categoryColors = {
-                'Food': '#116A7B',
-                'Non Carbonated': '#CDC2AE',
-                'Carbonated': '#ECE5C7',
-                'Water': '#C2DEDC'
+        const sortedSeasons = Object.keys(seasonTotals).sort((a, b) => seasonTotals[b] - seasonTotals[a]);
+
+        const categories = Array.from(new Set(data.map(item => item.Category)));
+
+        const categoryColors = {
+            'Food': '#116A7B',
+            'Non Carbonated': '#CDC2AE',
+            'Carbonated': '#ECE5C7',
+            'Water': '#C2DEDC'
+        };
+
+        const datasets = categories.map(category => {
+            return {
+                label: category,
+                data: sortedSeasons.map(season => groupedData[season][category] || 0),
+                backgroundColor: categoryColors[category] || '#000000',
             };
+        });
 
-            const datasets = categories.map(category => {
-                return {
-                    label: category,
-                    data: sortedSeasons.map(season => groupedData[season][category] || 0),
-                    backgroundColor: categoryColors[category] || '#000000',  // Default to black if category is not found
-                };
-            });
-
-            const ctx = document.getElementById('100stackedChart').getContext('2d');
-            new Chart(ctx, {
+        const ctx = document.getElementById('100stackedChart').getContext('2d');
+        if (window.stackedChart) {
+            window.stackedChart.data.labels = sortedSeasons;
+            window.stackedChart.data.datasets = datasets;
+            window.stackedChart.update();
+        } else {
+            window.stackedChart = new Chart(ctx, {
                 type: 'bar',
                 data: {
                     labels: sortedSeasons,
@@ -46,18 +62,29 @@ document.addEventListener('DOMContentLoaded', function () {
                 },
                 options: {
                     responsive: true,
+                    maintainAspectRatio: false, 
                     scales: {
                         x: {
                             stacked: true,
+                            title: {
+                                display: true,
+                                text: 'Season'
+                            },
+                            ticks: {
+                                maxRotation: 90,
+                                minRotation: 45
+                            }
                         },
                         y: {
                             stacked: true,
-                            ticks: {
-                                callback: function (value) {
-                                    return value;
-                                },
+                            title: {
+                                display: true,
+                                text: 'Total Transactions'
                             },
-                        },
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }
                     },
                     plugins: {
                         tooltip: {
@@ -69,24 +96,28 @@ document.addEventListener('DOMContentLoaded', function () {
                                 },
                             },
                         },
+                        legend: {
+                            position: 'top'
+                        },
                         datalabels: {
                             formatter: (value, ctx) => {
-                                return value.toString();  // Return the value as a string
+                                return value.toString();
                             },
                             color: '#000',
                             anchor: 'end',
                             align: 'start',
                             offset: 10,
                             font: {
-                                size: 10 // Smaller font size
+                                size: 10
                             },
-                            backgroundColor: null,  // No background color for the labels
-                            borderRadius: 0,       // No border radius
-                            padding: 0             // No padding
+                            backgroundColor: null,
+                            borderRadius: 0,
+                            padding: 0
                         }
                     },
                 },
                 plugins: [ChartDataLabels]
             });
-        });
+        }
+    }
 });
