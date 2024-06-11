@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>About Us</title>
     <link rel="stylesheet" href="style2.css">
+    <script src="script2.js"></script>
     <script src="https://kit.fontawesome.com/a7ff4a51d6.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -275,30 +276,34 @@
 </section>
     <br>
     <br>
-<section>
-    <footer>
-        <div class="footer-content">
-            <div class="col-1"></div>
-            <div class="col-2">
-                <h3>Team 1 Jakarta</h3>
-                <p>This website is part of the Capstone Project  Software Engineering Kampus Merdeka Studi Independen RevoU.</p>
-                <div class="socials">
-                <a href="https://github.com/Kampus-Merdeka-Software-Engineering/km-feb24-jakarta-1"><i class="fa-brands fa-github fa-1.5x" style="color: #000000;"></i></a>
+    <section>
+        <footer>
+            <div class="footer-content">
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <h3>Team 1 Jakarta</h3>
+                    <p>This website is part of the Capstone Project  Software Engineering Kampus Merdeka Studi Independen RevoU.</p>
+                    <div class="socials">
+                    <a href="https://github.com/Kampus-Merdeka-Software-Engineering/km-feb24-jakarta-1"><i class="fa-brands fa-github fa-1.5x" style="color: #000000;"></i></a>
+                    </div>
                 </div>
+                <div class="col-3">
+                    <h3>Any Feedbacks?</h3>
+                <form id="feedbackForm">
+                    <input type="text" placeholder="Share Your Thoughts" id="feedback" required>
+                    <br>
+                    <button type="submit" id="submit-form">Submit</button>
+                </form>
+                </div>
+                <script src="script.js"></script>
             </div>
-            <div class="col-3">
-                <h3>Any Feedbacks?</h3>
-            <form>
-                <input type="text" placeholder="Share Your Thoughts" required>
-                <br>
-                <button type="submit">Submit</button>
-            </form>
+            <div class="footer-bottom">
+                <p>copyright 2024 Team 1 Jakarta</p>
             </div>
+        </footer>
+        <div id="popup" class="popup">
+          <p>Thank you for your feedback!</p>
         </div>
-        <div class="footer-bottom">
-            <p>copyright 2024 Team 1 Jakarta</p>
-        </div>
-    </footer>
 </section>
 
 </body>

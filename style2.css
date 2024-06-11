@@ -259,7 +259,7 @@ form button {
     border-radius: 1.25rem;
     font-size: 0.8rem;
     cursor: pointer;
-    transition: transform 0.2s ease;
+    transition: transform 0.3s ease;
 }
 
 form button:hover {
@@ -270,4 +270,57 @@ form button:hover {
 
 form button:active {
     transform: scale(0.95);
+}
+
+/* pop up notifications */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Satoshi", serif;
+    background-color: #b1dad5;
+    color: black;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    display: none;
+    border: solid black 0.5px;
+  }
+
+@media screen and (max-width: 768px) {
+    .footer-content .col-1 {
+        display: none;
+    }
+
+    .footer-content h3 {
+        font-size: 1.2rem;
+    }
+    
+    .footer-content p {
+        font-size: 0.8rem; 
+    }
+
+    form input {
+        width: 140px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-content .col-1 {
+        display: none;
+    }
+
+    .footer-content h3 {
+        font-size: 0.75rem;
+    }
+    
+    .footer-content p {
+        font-size: 0.6rem; 
+    }
+
+    form input {
+        width: 115px;
+    }
 }

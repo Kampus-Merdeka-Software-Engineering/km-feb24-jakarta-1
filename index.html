@@ -13,8 +13,8 @@
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-    <script src="chart js/revenuemonth.js"></script>
-    <script src="chart js/revenuelocation.js"></script>
+    <script src="chart js/revenuemonth.js" defer></script>
+    <script src="chart js/revenuelocation.js" defer></script>
     <script src="chart js/categoryproduct.js" defer></script>
     <script src="chart js/categorytransaction.js" defer></script>
     <script src="chart js/productseason.js" defer></script>
@@ -386,10 +386,10 @@
             </div>
             <div class="col-3">
                 <h3>Any Feedbacks?</h3>
-            <form>
-                <input type="text" placeholder="Share Your Thoughts" required>
+            <form id="feedbackForm">
+                <input type="text" placeholder="Share Your Thoughts" id="feedback" required>
                 <br>
-                <button type="submit">Submit</button>
+                <button type="submit" id="submit-form">Submit</button>
             </form>
             </div>
         </div>
@@ -397,6 +397,9 @@
             <p>copyright 2024 Team 1 Jakarta</p>
         </div>
     </footer>
+    <div id="popup" class="popup">
+      <p>Thank you for your feedback!</p>
+    </div>
 </section>
 
 </body>
